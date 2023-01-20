@@ -1,0 +1,5 @@
+1. Defining Bounded Context
+2. Configuration Management
+3. Dynamic scaling
+4. Visibility to know where the bug is in the architecture.
+5. Fault tolerance

@@ -1,0 +1,17 @@
+1. We can Zipkin and Rabbit on Docker.
+
+2. We also need to add Zipkin and sleuth dependencies in the pom of all the services.
+
+3. In order for our service to create a Docker image, we don't need a Docker file anymore, we can just put the configurations
+	in the pom file.
+
+4. The services talk to the Zipkin server through Rabbit.
+
+5. If we had 100s of microservices, we cannot run them 1 by 1. So for that, we will need Docker Compose, which runs all the 
+	services with just 1 command.
+
+6. If you are using Kubernetes, then you DONT need client-side service discovery, api gateway and load balance, as Kubernetes handles it.
+
+7. We also wont need zipkin and sleuth as k8s provides tracing. 
+
+8. Only spring cloud thing we keep in microservices is the feign-client for REST calls
